@@ -1,0 +1,15 @@
+@use 'src/App' as vars;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  padding: 0 vars.$container-spacing;
+  background: linear-gradient(90deg, vars.$primary-dark 1.18%, vars.$primary-light 100%);
+}
+
+.infoText {
+  margin: 0;
+  color: vars.$white;
+}
