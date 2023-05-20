@@ -1,0 +1,32 @@
+@use '/src/App' as vars;
+
+@property --colour-start {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: vars.$primary-dark;
+}
+
+@property --colour-end {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: vars.$primary-light;
+}
+
+.button {
+  width: 100%;
+  padding: 0.75rem;
+  background-image: linear-gradient(90deg, var(--colour-start) 1.18%, var(--colour-end) 100%);
+  border: none;
+  border-radius: vars.$border-radius;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: vars.$white;
+  cursor: pointer;
+  transition: --colour-start .5s, --colour-end .5s;
+
+  &:hover {
+    --colour-start: #a626d3;
+    --colour-end: #672280;
+  }
+}

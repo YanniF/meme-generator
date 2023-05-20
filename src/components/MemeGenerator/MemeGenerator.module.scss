@@ -1,0 +1,11 @@
+@use 'src/App' as vars;
+
+.container {
+  padding: 4rem vars.$container-spacing;
+}
+
+.inputsWrapper {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}

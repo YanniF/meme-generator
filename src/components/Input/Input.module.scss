@@ -1,0 +1,14 @@
+@use '/src/App' as vars;
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  font-family: inherit;
+  font-size: 1.125rem;
+  border-radius: vars.$border-radius;
+  border: 1px solid vars.$light-grey;
+
+  &:focus {
+    outline-color: vars.$primary-light;
+  }
+}
